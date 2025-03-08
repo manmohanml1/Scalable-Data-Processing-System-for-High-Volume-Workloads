@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"

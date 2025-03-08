@@ -1,0 +1,12 @@
+{
+  "dashboard": {
+    "title": "Kafka Consumer Metrics",
+    "panels": [
+      {
+        "title": "Messages Consumed",
+        "type": "graph",
+        "targets": []
+      }
+    ]
+  }
+}
