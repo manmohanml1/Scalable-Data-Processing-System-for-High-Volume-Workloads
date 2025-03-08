@@ -1,0 +1,8 @@
+CREATE TABLE data (
+    id SERIAL PRIMARY KEY,
+    event_time TIMESTAMP NOT NULL,
+    payload JSONB
+) PARTITION BY RANGE (event_time);
+
+CREATE TABLE data_2024 PARTITION OF data
+    FOR VALUES FROM ('2024-01-01') TO ('2025-01-01');
